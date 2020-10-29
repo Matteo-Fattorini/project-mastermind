@@ -71,12 +71,9 @@ function checkResult(array, pcarray) {
   return shuffle(simbols).join("");
 }
 
-
 function hasDuplicates(array) {
-  
   return new Set(array).size !== array.length;
 }
-
 
 //!elementi
 
@@ -98,14 +95,11 @@ var LOST = false;
 var WINCONDITION = "OOOOO";
 var WINNER = false;
 
-console.log("condition " + WINCONDITION);
-
 startEl.addEventListener("click", function () {
   instrucionsEl.style.display = "none";
   scoreboxEl.style.display = "block";
   scoreResultEl.style.display = "block";
   pcPicks = randomNumList(0, 10, 5);
-  console.log(pcPicks);
 });
 
 pushNumEl.addEventListener("click", function () {
@@ -113,12 +107,12 @@ pushNumEl.addEventListener("click", function () {
 
   if (WINNER) {
     alert("Hai vinto, refresha per rigiocare");
+  } else if (hasDuplicates(numberInput.value)) {
+    alert("hai messo un doppione! Non fare il furbo...");
   } else if (
     isNaN(numberInput.value) ||
     numberInput.value.length > 5 ||
-    numberInput.value.length < 5 ||
-    hasDuplicates(numberInput.value)
-    
+    numberInput.value.length < 5
   ) {
     alert("Hai inserito un numero di 5 cifre?");
     //? ha vinto?
