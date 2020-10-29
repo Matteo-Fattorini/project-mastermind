@@ -106,18 +106,17 @@ pushNumEl.addEventListener("click", function () {
 
   if (WINNER) {
     alert("Hai vinto, refresha per rigiocare");
-  }
-
-   else if (
+  } else if (
     isNaN(numberInput.value) ||
     numberInput.value.length > 5 ||
-    numberInput.value.length < 5
+    numberInput.value.length < 5 ||
+    numberInput.value.length != new Set(numberInput.value).length
   ) {
     alert("Hai inserito un numero di 5 cifre?");
     //? ha vinto?
   } else if (checkResult(numberInput.value, pcPicks) == WINCONDITION) {
     WINNER = true;
-    alert("HAI VINTO!! Ci hai messo " + (10-TRIES) + " tentativi!");
+    alert("HAI VINTO!! Ci hai messo " + (10 - TRIES) + " tentativi!");
   } else if (TRIES == 1) {
     alert("HAI PERSO :(");
   } else {
