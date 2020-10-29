@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-  
+  padding: 10px;
   text-align: center;
 }
 h4 {
@@ -60,7 +60,7 @@ h3 {
   background-color: var(--lightblack);
   border: 1px solid var(--red);
   margin: 70px auto;
-  width: 100%;
+  width: 90%;
   min-height: 460px;
   position: relative;
   padding-top: 50px;
@@ -72,7 +72,7 @@ h3 {
 
 #scoreResult {
   margin: auto;
-  width: 100%;
+  width: 90%;
   font-size: 2.5rem;
   height: 200px;
   overflow-y: scroll;

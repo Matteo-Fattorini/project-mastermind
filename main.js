@@ -71,6 +71,13 @@ function checkResult(array, pcarray) {
   return shuffle(simbols).join("");
 }
 
+
+function hasDuplicates(array) {
+  
+  return new Set(array).size !== array.length;
+}
+
+
 //!elementi
 
 var startEl = document.getElementById("startGame");
@@ -110,7 +117,8 @@ pushNumEl.addEventListener("click", function () {
     isNaN(numberInput.value) ||
     numberInput.value.length > 5 ||
     numberInput.value.length < 5 ||
-    numberInput.value.length != new Set(numberInput.value).length
+    hasDuplicates(numberInput.value)
+    
   ) {
     alert("Hai inserito un numero di 5 cifre?");
     //? ha vinto?
