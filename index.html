@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script defer src="main.js" ></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <title>Mastermind</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="instructions">
+      <h1>Gioca a Mastermind</h1>
+      <h3>
+        Devi cercare di indovinare il numero di 4 cifre che il computer sta pensando...!
+      </h3>
+      <h4>Un "O" indica che hai azzeccato la posizione la "X" indica che hai indovinato il numero ma non la sua
+        posizione</h4>
+      <h3>Sei Pronto?!</h3>
+      <button id="startGame">Iniziamo</> </button>
+    </div>
+    <div id="scoreResult">
+      <div class="scoreNumbers">
+        <div id="scoreNumbers"></div>
+      </div>
+      <div class="scoreSimbols">
+        <div id="scoreSimbols"></div>
+      </div>
+    </div>
+
+    <div id="scorebox" class="scorebox">
+      <div id="title" class="title">
+        <span>Numero tentativi:</span>
+        <span id="tries">10</span>
+        
+      </div>
+      <input id="numberInput" type="text" />
+      <button id="pushNum">Prova!</button>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

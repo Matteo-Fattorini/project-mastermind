@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.8rem;
+}
+
+:root {
+  --red: #e81747;
+  --lightblack: #262626;
+  --black: #1a1a1a;
+}
+
+body {
+  background-color: var(--black);
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  
+  text-align: center;
+}
+h4 {
+  margin-top: 20px;
+}
+
+button {
+  font-size: 1.5rem;
+  margin-right: 20px;
+  margin-top: 50px;
+  padding: 20px;
+  background: var(--black);
+  color: white;
+}
+
+.container h3 {
+  margin-top: 50px;
+}
+.container h3:not(:nth-child(2)) {
+  margin-top: 40px;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+#startGame:hover
+ {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.scorebox {
+  background-color: var(--lightblack);
+  border: 1px solid var(--red);
+  margin: 70px auto;
+  width: 100%;
+  min-height: 460px;
+  position: relative;
+  padding-top: 50px;
+  display: none;
+ 
+ 
+}
+
+
+#scoreResult {
+  margin: auto;
+  width: 100%;
+  font-size: 2.5rem;
+  height: 200px;
+  overflow-y: scroll;
+  padding: 0 20px;
+  border: 3px solid var(--red);
+  display:none;
+  
+}
+.instructions {
+  display:block;
+}
+
+.title {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+#numberInput {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  padding: 0, 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--lightblack);
+  border-color: var(--red);
+  line-height: 50px;
+  height: 100px;
+  width: 300px;
+  margin-bottom: 5px;
+}
+
+#pushNum {
+  color: white;
+  background-color: var(--lightblack);
+  border: 3px solid var(--red);
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 70px ;
+  width: 100px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  /* box-shadow: 0 0 1px 5px; */
+  border-radius: 5px;
+}
+
+#pushNum:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+
+.scoreNumbers, .scoreSimbols {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+
